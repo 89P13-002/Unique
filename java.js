@@ -6,9 +6,9 @@ const getTodos = async() => {
      var i,j,temp;
 
      for( i=0; i < data.length; i++){  
-             for( j=i; j < (data.length-i); j++){  
+             for( j=0; j < (data.length-i); j++){  
                       {  
-                            if(data[j-1].points<data[j].points){
+                            if(data[j-1].points>data[j].points){
                               temp = data[j-1];
                               data[j-1] = data[j];  
                               data[j] = temp;
@@ -29,11 +29,11 @@ const getTodos = async() => {
 
     var k;
 
-    for(k=3;k<data.length;k++){
+   /* for(k=3;k<data.length;k++){
         var white=
     }
-
-console
+*/
+console.log(data);
         }
 
     getTodos();
